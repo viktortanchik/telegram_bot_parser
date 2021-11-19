@@ -1,0 +1,26 @@
+1 installation
+pip install aiogram
+pip install Telethon
+pip install sqlite3
+
+2 you need to create a bot using @BotFather and create a config.py file insert a token like this TOKEN = "token itself"
+
+3 Open the create_db.py file and add account parameters, these parameters can be obtained here https://my.telegram.org/auth
+Phone = "+380 ****"
+password = "****"
+Api_id = "****"
+Api_hash = "****"
+
+4 Open the create_client.py file and change X to the number of accounts.
+
+5 Open the create_db_telebot.py file and run the file
+
+6 Open the key_bot_and_client.py file and run the file after adding chats
+
+7 Open config file and change ADMIN name
+
+8 Open the file update.py change the maximum number of accounts variable (max_accounts), set the time when it should come
+ updates (for example, we set 9 hours 59 minutes, then updates will come from 9 am 00 to 9 am 59 minutes.
+ 9-01 should not be set as updates may not arrive in time). And also you need to set the delay time when changing account variable (change_accounts)
+
+9 Open the run.py file and run the file, after the update the script will run in a loop every 1 minute
